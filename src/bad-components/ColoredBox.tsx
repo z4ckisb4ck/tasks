@@ -11,7 +11,7 @@ export function ColoredBox(): React.JSX.Element {
         return (
             <Button
                 onClick={() => {
-                    setColorIndex((1 + colorIndex) % COLORS.length);
+                    setColorIndex((prev) => (1 + prev) % COLORS.length);
                 }}
             >
                 Next Color

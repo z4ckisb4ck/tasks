@@ -8,7 +8,7 @@ export function DoubleHalf(): React.JSX.Element {
         return (
             <Button
                 onClick={() => {
-                    setValue(2 * value);
+                    setValue((prev) => 2 * prev);
                 }}
             >
                 Double
@@ -20,7 +20,7 @@ export function DoubleHalf(): React.JSX.Element {
         return (
             <Button
                 onClick={() => {
-                    setValue(0.5 * value);
+                    setValue((prev) => 0.5 * prev);
                 }}
             >
                 Halve
